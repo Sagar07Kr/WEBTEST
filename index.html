@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VËLOUR — Premium Fashion</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <a href="#home" class="logo">VËLOUR</a>
+  <nav class="desktop" id="nav-desktop">
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <button class="cart-btn" id="cart-toggle-btn">
+      <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+      </svg>
+      Cart <span class="cart-count" id="cart-count">0</span>
+    </button>
+  </nav>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<nav class="mobile" id="nav-mobile">
+  <a href="#home">Home</a>
+  <a href="#shop">Shop</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <a href="#" id="cart-toggle-mobile" style="color:var(--accent)">🛒 Cart (<span id="cart-count-mobile">0</span>)</a>
+</nav>
+
+<!-- MARQUEE -->
+<div class="marquee-strip">
+  <div class="marquee-inner">
+    <span>Free shipping over $150</span><span>★</span>
+    <span>New Season Arrivals</span><span>★</span>
+    <span>Sustainable Fabrics</span><span>★</span>
+    <span>Handcrafted Quality</span><span>★</span>
+    <span>Free Returns</span><span>★</span>
+    <span>Free shipping over $150</span><span>★</span>
+    <span>New Season Arrivals</span><span>★</span>
+    <span>Sustainable Fabrics</span><span>★</span>
+    <span>Handcrafted Quality</span><span>★</span>
+    <span>Free Returns</span><span>★</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Spring / Summer Collection 2025</p>
+    <h1 class="hero-title">Dress to<br><em>Define</em> Yourself</h1>
+    <p class="hero-sub">Curated pieces that speak without words.</p>
+    <a href="#shop" class="btn-primary">Explore Collection</a>
+  </div>
+</section>
+
+<!-- SHOP -->
+<section id="shop">
+  <div class="shop-header">
+    <div>
+      <p class="section-label">Our Collection</p>
+      <h2 class="section-title">New Arrivals</h2>
+      <p class="section-desc">Timeless designs crafted with sustainable fabrics for the modern wardrobe.</p>
+    </div>
+  </div>
+  <div class="products-grid" id="products-grid"></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-img-wrap">
+    <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=800&q=80" alt="About Vëlour" loading="lazy">
+  </div>
+  <div class="about-content">
+    <p class="section-label">Our Story</p>
+    <h2 class="section-title">Born from a Passion<br>for Craftsmanship</h2>
+    <p class="section-desc">VËLOUR was founded in 2019 with a simple belief: clothing should feel as good as it looks. Every stitch is intentional, every fabric sourced responsibly, and every piece designed to outlast fleeting trends.</p>
+    <p class="section-desc">We partner with artisan ateliers across Europe and Asia to bring you garments that carry stories of skill and heritage.</p>
+    <div class="about-stats">
+      <div class="stat-item"><div class="stat-num">6+</div><div class="stat-label">Years</div></div>
+      <div class="stat-item"><div class="stat-num">40k+</div><div class="stat-label">Customers</div></div>
+      <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label">Sustainable</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <p class="section-label">Get In Touch</p>
+  <h2 class="section-title">We'd Love to Hear<br>from You</h2>
+  <p class="section-desc">Have questions about an order, sizing, or collaboration? Reach out anytime.</p>
+  <form class="contact-form" id="contact-form">
+    <div class="form-row">
+      <input type="text" placeholder="First Name" required>
+      <input type="text" placeholder="Last Name" required>
+    </div>
+    <input type="email" placeholder="Email Address" required>
+    <input type="text" placeholder="Subject">
+    <textarea placeholder="Your message..."></textarea>
+    <button type="submit" class="btn-primary">Send Message</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="logo">VËLOUR</a>
+      <p>Premium fashion rooted in sustainability and artisan craft. Elevate your everyday.</p>
+      <div class="social-links">
+        <a href="#" title="Instagram">IG</a>
+        <a href="#" title="Twitter/X">X</a>
+        <a href="#" title="Pinterest">PT</a>
+        <a href="#" title="TikTok">TK</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="#shop">New Arrivals</a></li>
+        <li><a href="#shop">Women</a></li>
+        <li><a href="#shop">Men</a></li>
+        <li><a href="#shop">Accessories</a></li>
+        <li><a href="#shop">Sale</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Help</h4>
+      <ul>
+        <li><a href="#">Sizing Guide</a></li>
+        <li><a href="#">Shipping & Returns</a></li>
+        <li><a href="#">Track Order</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#">Sustainability</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 VËLOUR. All rights reserved.</span>
+    <span>Privacy Policy · Terms of Service</span>
+  </div>
+</footer>
+
+<!-- CART OVERLAY -->
+<div class="cart-overlay" id="cart-overlay"></div>
+
+<!-- CART SIDEBAR -->
+<div class="cart-sidebar" id="cart-sidebar">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button class="close-cart" id="close-cart">✕</button>
+  </div>
+  <div class="cart-items" id="cart-items"></div>
+  <div class="cart-footer" id="cart-footer" style="display:none">
+    <div class="cart-total-row">
+      <span class="cart-total-label">Total</span>
+      <span class="cart-total-price" id="cart-total">$0.00</span>
+    </div>
+    <button class="checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">Added <span id="toast-name"></span> to cart</div>
+
+
+
+<script src="app.js"></script>
+</body>
+</html>
